@@ -182,7 +182,7 @@ body {
     padding: 24px 0 25px;
 }
 
-.logo-footer {
+.logo--footer {
     color: var(--whiteColor);
 }
 
@@ -193,46 +193,49 @@ body {
     padding: 60px 0;
 }
 
-.footer .container {
+.footer .footer__container {
     display: flex;
     align-items: baseline;
     gap: 70px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-.footer-list li:first-child a {
+.footer__list li:first-child a {
     color: var(--whiteColor);
 }
 
-.footer-item:not(:last-child) {
+.footer__item:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.footer-item {
+.footer__item {
     transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 }
 
-.footer-item:hover,
-.footer-item:focus,
-.footer-list li:first-child a:hover,
-.footer-list li:first-child a:focus {
+.footer__item:hover,
+.footer__item:focus,
+.footer__list li:first-child a:hover,
+.footer__list li:first-child a:focus {
     color: var(--mainPageColor);
 }
 
-.footer-list a {
+.footer__list a {
     line-height: 1.71;
 }
 
-.footer-navigation {
+.footer__navigation {
     margin-top: 20px;
 }
 
-.footer-navigation a {
+.footer__navigation a {
     color: var(--footerContactColor);
 }
 
-.footer-title {
+.footer__title {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -240,18 +243,18 @@ body {
     margin-bottom: 20px;
 }
 
-.footer-social_media-list {
+.footer__social-media-list {
     display: flex;
     gap: 10px;
 }
 
-.footer-social_media .footer-social_media-icon {
+.footer__social-media .footer__social-media-icon {
     width: 20px;
     height: 20px;
     fill: var(--whiteColor);
 }
 
-.footer-social_media-container {
+.footer__social-media-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,12 +268,12 @@ body {
     transition-duration: 250ms;
 }
 
-.footer-social_media-container:hover,
-.footer-social_media-container:focus {
+.footer__social-media-container:hover,
+.footer__social-media-container:focus {
     background-color: var(--mainPageColor);
 }
 
-.newsletter input {
+.newsletter__input {
     padding: 15px 0 15px 16px;
     background-color: var(--bannerBackgroundColor);
     color: var(--newsletterTextColor);
@@ -280,7 +283,7 @@ body {
     min-width: 358px;
 }
 
-.newsletter button {
+.newsletter__button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -297,11 +300,11 @@ body {
     color: var(--whiteColor);
 }
 
-.newsletter-icon {
+.newsletter__icon {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.newsletter-container {
+.newsletter__container {
     display: flex;
     gap: 12px;
 }
@@ -720,7 +723,7 @@ body {
 
 /*-------------------------------------- CLIENTS STLES --------------------------------------*/
 
-.clients-title {
+.clients__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -729,12 +732,12 @@ body {
     margin-bottom: 50px;
 }
 
-.clients-list {
+.clients__list {
     display: flex;
     gap: 30px;
 }
 
-.clients-list-container {
+.clients__container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -748,12 +751,12 @@ body {
     transition-duration: 250ms;
 }
 
-.clients-list-container:hover,
-.clients-list-container:focus {
+.clients__container:hover,
+.clients__container:focus {
     color: var(--mainPageColor);
 }
 
-.clients-list-logo {
+.clients__logo {
     width: 106px;
     height: 60px;
     fill: currentColor;
