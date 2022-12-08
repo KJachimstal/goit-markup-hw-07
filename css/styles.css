@@ -177,7 +177,7 @@ body {
     color: var(--mainPageColor);
 }
 
-.logo-menu {
+.logo--menu {
     margin-right: 93px;
     padding: 24px 0 25px;
 }
@@ -567,18 +567,18 @@ body {
 
 /*-------------------------------------- DESCRIPTION STLES --------------------------------------*/
 
-.description-list {
+.description {
     display: flex;
     justify-content: center;
     gap: 30px;
     margin: 0 auto;
 }
 
-.description-item {
+.description__item {
     width: 270px;
 }
 
-.description-item-container {
+.description__container {
     width: 270px;
     height: 120px;
     background-color: var(--buttonColor);
@@ -589,7 +589,7 @@ body {
     margin-bottom: 30px;
 }
 
-.description-item-subtitle {
+.description__subtitle {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -597,7 +597,7 @@ body {
     margin-bottom: 10px;
 }
 
-.description-item-content {
+.description__content {
     line-height: 1.71;
     color: var(--contactColor);
 }
