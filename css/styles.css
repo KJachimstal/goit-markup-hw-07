@@ -321,7 +321,7 @@ body {
     height: 600px;
 }
 
-.banner-title {
+.banner__title {
     font-weight: 900;
     font-size: 44px;
     font-family: inherit;
@@ -333,7 +333,7 @@ body {
     margin-bottom: 30px;
 }
 
-.banner-button {
+.banner__button {
     color: var(--whiteColor);
     background: var(--mainPageColor);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
