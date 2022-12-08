@@ -98,23 +98,26 @@ body {
     border-bottom: 1px solid var(--headerButtonColor);
 }
 
-.header-container {
+.header__container {
     display: flex;
     align-items: center;
 }
 
-.menu-list {
+.menu__list,
+.contact__list {
     display: flex;
     gap: 50px;
     position: relative;
 }
 
-.menu-list li a:hover,
-.menu-list li a:focus {
+.menu__list li a:hover,
+.menu__list li a:focus,
+.contact__list li a:hover,
+.contact__list li a:focus {
     color: var(--mainPageColor);
 }
 
-.menu-item {
+.menu__item {
     position: relative;
     font-weight: 500;
     line-height: 16px;
@@ -126,11 +129,25 @@ body {
     transition-duration: 250ms;
 }
 
-.menu-contact-list {
+.menu__item--active {
+    color: var(--mainPageColor);
+}
+
+.menu__item--active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--mainPageColor);
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+}
+.contact__list--position {
     margin-left: auto;
 }
 
-.menu-contact-item {
+.contact__item {
     color: var(--contactColor);
     font-weight: 500;
     display: flex;
@@ -141,24 +158,10 @@ body {
     transition-duration: 250ms;
 }
 
-.menu-contact-item .icon {
+.contact__icon {
     fill: currentColor;
 }
 
-.menu-item-active {
-    color: var(--mainPageColor);
-}
-
-.menu-item-active::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: var(--mainPageColor);
-    height: 4px;
-    width: 100%;
-    border-radius: 2px;
-}
 
 /*-------------------------------------- LOGO STLES --------------------------------------*/
 
