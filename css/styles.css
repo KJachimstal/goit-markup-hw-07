@@ -600,11 +600,11 @@ body {
 
 /*-------------------------------------- ABOUT US STLES --------------------------------------*/
 
-.about_us {
+.about-us {
     padding-top: 0;
 }
 
-.about_us__title {
+.about-us__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -613,14 +613,14 @@ body {
     margin-bottom: 50px;
 }
 
-.about_us__list {
+.about-us__list {
     display: flex;
     justify-content: center;
     position: relative;
     gap: 30px;
 }
 
-.about_us__description {
+.about-us__description {
     position: absolute;
     bottom: 0px;
     display: flex;
@@ -642,13 +642,7 @@ body {
     display: block;
 }
 
-.crew-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.crew-title {
+.crew__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -657,18 +651,24 @@ body {
     margin-bottom: 50px;
 }
 
-.crew-item {
+.crew__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.crew__item {
     width: 270px;
     background: var(--whiteColor);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-.crew-item-container {
+.crew__container {
     padding: 30px 0;
 }
 
-.crew-item-name {
+.crew__name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -677,7 +677,7 @@ body {
     margin-bottom: 10px;
 }
 
-.crew-item-position {
+.crew__position {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -685,13 +685,13 @@ body {
     margin-bottom: 16px;
 }
 
-.crew-item-social_media {
+.crew__social-media {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.crew-item-social_media .crew-item-social_media-icon {
+.crew__social-media .crew__social-media-icon {
     fill: currentColor;
     transition-property: fill;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -699,7 +699,7 @@ body {
 
 }
 
-.crew-item-social_media-container {
+.crew__social-media-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -712,8 +712,8 @@ body {
     transition-duration: 250ms;
 }
 
-.crew-item-social_media-container:hover,
-.crew-item-social_media-container:focus {
+.crew__social-media-container:hover,
+.crew__social-media-container:focus {
     background-color: var(--mainPageColor);
     color: var(--whiteColor);
 }
