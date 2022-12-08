@@ -574,10 +574,6 @@ body {
     margin: 0 auto;
 }
 
-.description__item {
-    width: 270px;
-}
-
 .description__container {
     width: 270px;
     height: 120px;
@@ -608,17 +604,23 @@ body {
     padding-top: 0;
 }
 
-.about_us-list {
+.about_us__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--secondaryPageColor);
+    margin-bottom: 50px;
+}
+
+.about_us__list {
     display: flex;
     justify-content: center;
+    position: relative;
     gap: 30px;
 }
 
-.about_us-list li {
-    position: relative;
-}
-
-.about_us-list-description {
+.about_us__description {
     position: absolute;
     bottom: 0px;
     display: flex;
@@ -631,15 +633,6 @@ body {
     background-color: var(--backgroundAboutUs);
     height: 70px;
     width: 370px;
-}
-
-.about_us-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    color: var(--secondaryPageColor);
-    margin-bottom: 50px;
 }
 
 /*-------------------------------------- CREW STLES --------------------------------------*/
