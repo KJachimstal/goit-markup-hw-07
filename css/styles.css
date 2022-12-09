@@ -764,7 +764,22 @@ body {
 
 /*-------------------------------------- PORTFOLIO STLES --------------------------------------*/
 
-.portfolio button {
+.portfolio__list {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio__list--buttons {
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
+.portfolio__list--cards {
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio__button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -779,25 +794,18 @@ body {
     transition-duration: 250ms;
 }
 
-.portfolio button:hover,
-.portfolio button:focus {
+.portfolio__button:hover,
+.portfolio__button:focus {
     color: var(--whiteColor);
     background: var(--mainPageColor);
 }
 
-.portfolio-bottons-list {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 50px;
-}
-
-.portfolio-item-img {
+.portfolio__img {
     position: relative;
     overflow: hidden;
 }
 
-.portfolio-item-overlay {
+.portfolio__overlay {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -809,7 +817,7 @@ body {
     transition-duration: 250ms;
 }
 
-.portfolio-item-overlay p {
+.portfolio__overlay p {
     font-size: 18px;
     line-height: 1.55;
     letter-spacing: 0.03em;
@@ -817,36 +825,29 @@ body {
     padding: 49px 45px 49px 24px;
 }
 
-.portfolio-item-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.portfolio-item {
+.portfolio__item {
     display: block;
     transition-property: box-shadow;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio__item:hover,
+.portfolio__item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-item:hover .portfolio-item-overlay,
-.portfolio-item:focus .portfolio-item-overlay {
+.portfolio__item:hover .portfolio__overlay,
+.portfolio__item:focus .portfolio__overlay {
     transform: translateY(0);
 }
 
-.portfolio-item-container {
+.portfolio__container {
     border: 1px solid var(--portfolioBorderColor);
     padding: 20px 24px;
 }
 
-.portfolio-item-name {
+.portfolio__name {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -855,7 +856,7 @@ body {
     margin-bottom: 4px;
 }
 
-.portfolio-item-description {
+.portfolio__description {
     font-size: 16px;
     line-height: 1.87;
     color: var(--contactColor);
