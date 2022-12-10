@@ -148,9 +148,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-
-.clients__container:hover,
-.clients__container:focus {
+.clients__container:hover, .clients__container:focus {
   color: #2196f3;
 }
 
@@ -233,9 +231,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-
-.crew__social-media-container:hover,
-.crew__social-media-container:focus {
+.crew__social-media-container:hover, .crew__social-media-container:focus {
   background-color: #2196f3;
   color: #fff;
 }
@@ -288,13 +284,11 @@
 .footer__list a {
   line-height: 1.71;
 }
-
 .footer__list li:first-child a {
   color: #fff;
 }
-
-.footer__item:not(:last-child) {
-  margin-bottom: 9px;
+.footer__list li:first-child a:hover, .footer__list li:first-child a:focus {
+  color: #2196f3;
 }
 
 .footer__item {
@@ -302,18 +296,16 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-
-.footer__item:hover,
-.footer__item:focus,
-.footer__list li:first-child a:hover,
-.footer__list li:first-child a:focus {
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer__item:hover, .footer__item:focus, .footer__item li:first-child a:hover, .footer__item li:first-child a:focus {
   color: #2196f3;
 }
 
 .footer__navigation {
   margin-top: 20px;
 }
-
 .footer__navigation a {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -350,9 +342,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-
-.footer__social-media-container:hover,
-.footer__social-media-container:focus {
+.footer__social-media-container:hover, .footer__social-media-container:focus {
   background-color: #2196f3;
 }
 
@@ -726,9 +716,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-
-.portfolio__button:hover,
-.portfolio__button:focus {
+.portfolio__button:hover, .portfolio__button:focus {
   color: #fff;
   background: #2196f3;
 }
@@ -749,7 +737,6 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-
 .portfolio__overlay p {
   font-size: 18px;
   line-height: 1.55;
@@ -764,14 +751,10 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-
-.portfolio__item:hover,
-.portfolio__item:focus {
+.portfolio__item:hover, .portfolio__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-.portfolio__item:hover .portfolio__overlay,
-.portfolio__item:focus .portfolio__overlay {
+.portfolio__item:hover .portfolio__overlay, .portfolio__item:focus .portfolio__overlay {
   transform: translateY(0);
 }
 
