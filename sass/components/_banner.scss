@@ -1,0 +1,38 @@
+.banner {
+    background-color: $bannerBackgroundColor;
+    padding: 200px 0;
+    text-align: center;
+    margin: 0 auto;
+    background-image: linear-gradient($bannerBackgroundColorGradient,
+            $bannerBackgroundColorGradient, url(../images/banner.jpg));
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1600px;
+    height: 600px;
+}
+
+.banner__title {
+    font-weight: 900;
+    font-size: 44px;
+    font-family: inherit;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: $whiteColor;
+    width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.banner__button {
+    color: $whiteColor;
+    background: $mainPageColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    min-width: 200px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    margin: 0 auto;
+    padding: 10px 41px
+}

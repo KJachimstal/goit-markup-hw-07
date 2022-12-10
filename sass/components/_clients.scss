@@ -1,0 +1,38 @@
+.clients__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: $secondaryPageColor;
+    margin-bottom: 50px;
+}
+
+.clients__list {
+    display: flex;
+    gap: 30px;
+}
+
+.clients__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    color: $socialMediaColor;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
+.clients__container:hover,
+.clients__container:focus {
+    color: $mainPageColor;
+}
+
+.clients__logo {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}

@@ -1,0 +1,30 @@
+.description {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.description__container {
+    width: 270px;
+    height: 120px;
+    background-color: $buttonColor;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.description__subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $secondaryPageColor;
+    margin-bottom: 10px;
+}
+
+.description__content {
+    line-height: 1.71;
+    color: $contactColor;
+}

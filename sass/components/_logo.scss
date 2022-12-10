@@ -3,11 +3,11 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: var(--blackColor);
+    color: $blackColor;
 }
 
 .logo span {
-    color: var(--mainPageColor);
+    color: $mainPageColor;
 }
 
 .logo--menu {
@@ -16,5 +16,5 @@
 }
 
 .logo--footer {
-    color: var(--whiteColor);
+    color: $whiteColor;
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+
 h1,
 h2,
 h3,
@@ -38,8 +40,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
-    background-color: var(--whiteColor);
-    color: var(--secondaryPageColor);
+    background-color: $whiteColor;
+    color: $secondaryPageColor;
 }
 
 .container {

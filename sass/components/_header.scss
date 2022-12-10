@@ -1,5 +1,5 @@
 .header {
-    border-bottom: 1px solid var(--headerButtonColor);
+    border-bottom: 1px solid $headerButtonColor;
 }
 
 .header__container {
@@ -15,7 +15,7 @@
     
     & li a:hover,
     & li a:focus {
-        color: var(--mainPageColor);
+        color: $mainPageColor;
     }
 }
 
@@ -25,21 +25,21 @@
     line-height: 16px;
     letter-spacing: 0.02em;
     padding: 32px 0;
-    color: var(--secondaryPageColor);
+    color: $secondaryPageColor;
     transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 }
 
 .menu__item--active {
-    color: var(--mainPageColor);
+    color: $mainPageColor;
 
     &:after {
         content: '';
         position: absolute;
         bottom: 0;
         left: 0;
-        background-color: var(--mainPageColor);
+        background-color: $mainPageColor;
         height: 4px;
         width: 100%;
         border-radius: 2px;
@@ -50,7 +50,7 @@
 }
 
 .contact__item {
-    color: var(--contactColor);
+    color: $contactColor;
     font-weight: 500;
     display: flex;
     align-items: center;
