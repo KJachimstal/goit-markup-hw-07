@@ -60,7 +60,7 @@
     flex-direction: column;
     padding: 40px;
 
-    & p {
+    p {
         font-weight: 700;
         font-size: 20px;
         line-height: 1.15;
@@ -69,17 +69,17 @@
         margin-bottom: 12px;
     }
 
-    & input[type='checkbox'] {
+    input[type='checkbox'] {
         border: 1px solid #212121;
         border-radius: 0rem;
     }
 
-    & a {
+    a {
         color: $mainPageColor;
         text-decoration: underline;
     }
 
-    & button {
+    button {
         font-weight: 700;
         font-size: 16px;
         line-height: 1.87;
@@ -97,24 +97,24 @@
     flex-direction: column;
     margin-bottom: 20px;
 
-    & textarea[name='comment'] {
+    textarea[name='comment'] {
         height: 120px;
         resize: none;
     }
 
-    & label[for='comment'] {
+    label[for='comment'] {
         margin-bottom: 0px;
     }
 
-    & label {
+    label {
         margin-bottom: 10px;
         display: flex;
         flex-direction: column;
         position: relative;
     }
 
-    & input,
-    & textarea {
+    input,
+    textarea {
         padding: 12px 16px;
         outline: transparent;
         border: 1px solid rgba(33, 33, 33, 0.2);
@@ -124,25 +124,25 @@
         transition-duration: 250ms;
     }
 
-    & textarea::placeholder {
+    textarea::placeholder {
         color: $formPlaceholderColor;
     }
 
-    & input:focus,
-    & textarea:focus {
+    input:focus,
+    textarea:focus {
         border-color: $mainPageColor;
     }
 
-    & input:focus + .form-icon,
-    & textarea:focus + .form-icon {
+    input:focus + .form-icon,
+    textarea:focus + .form-icon {
         fill: $mainPageColor;
     }
 
-    & input {
+    input {
         padding-left: 42px;
     }
 
-    & span {
+    span {
         margin-bottom: 4px;
         line-height: 1.16;
         font-size: 12px;

@@ -6,45 +6,43 @@
 
 .check {
     padding-left: 1.2em;
-}
 
-.check__input {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-}
+    &__input {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+    }
 
-.check__box {
-    position: absolute;
-    top: 0.3em;
-    left: 1em;
-    width: 16px;
-    height: 15px;
-    overflow: hidden;
-    border-radius: 0.05em;
-    background-color: white;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    box-shadow: 0 0 0 0.1em $secondaryPageColor;
-}
+    &__box {
+        position: absolute;
+        top: 0.3em;
+        left: 1em;
+        width: 16px;
+        height: 15px;
+        overflow: hidden;
+        border-radius: 0.05em;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        box-shadow: 0 0 0 0.1em $secondaryPageColor;
+    }
 
-.check__input:checked+.check__box {
-    background-color: $mainPageColor;
-    background-image: url(../images/check.svg);
-}
+    &__input:checked + &__box {
+        background-color: $mainPageColor;
+        background-image: url(../images/check.svg);
+    }
 
-.check__input:focus+.check__box {
-    box-shadow:
-        0 0 0 0.1em $mainPageColor,
-        0 0 0 0.1em $mainPageColor;
-}
+    &__input:focus + &__box {
+        box-shadow: 0 0 0 0.1em $mainPageColor, 0 0 0 0.1em $mainPageColor;
+    }
 
-.check__input:disabled+.check__box {
-    box-shadow: 0 0 0 0.1em $secondaryPageColor;
-}
+    &__input:disabled + &__box {
+        box-shadow: 0 0 0 0.1em $secondaryPageColor;
+    }
 
-.check__input:checked:disabled+.check__box {
-    background-color: $secondaryPageColor;
+    &__input:checked:disabled + &__box {
+        background-color: $secondaryPageColor;
+    }
 }

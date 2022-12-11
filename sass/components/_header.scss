@@ -1,65 +1,70 @@
 .header {
     border-bottom: 1px solid $headerButtonColor;
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
 }
 
-.header__container {
-    display: flex;
-    align-items: center;
-}
-
-.menu__list,
+&__list,
 .contact__list {
     display: flex;
     gap: 50px;
     position: relative;
-    
-    & li a:hover,
-    & li a:focus {
+
+    li a:hover,
+    li a:focus {
         color: $mainPageColor;
     }
 }
 
-.menu__item {
-    position: relative;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    padding: 32px 0;
-    color: $secondaryPageColor;
-    transition-property: color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-}
+.menu {
+    &__item {
+        position: relative;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        padding: 32px 0;
+        color: $secondaryPageColor;
+        transition-property: color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+    }
 
-.menu__item--active {
-    color: $mainPageColor;
+    &__item--active {
+        color: $mainPageColor;
 
-    &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background-color: $mainPageColor;
-        height: 4px;
-        width: 100%;
-        border-radius: 2px;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $mainPageColor;
+            height: 4px;
+            width: 100%;
+            border-radius: 2px;
+        }
     }
 }
-.contact__list--position {
-    margin-left: auto;
-}
 
-.contact__item {
-    color: $contactColor;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition-property: color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-}
+.contact {
+    &__list--position {
+        margin-left: auto;
+    }
 
-.contact__icon {
-    fill: currentColor;
+    &__item {
+        color: $contactColor;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition-property: color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
 }
