@@ -1,7 +1,15 @@
-.portfolio__list {
-    display: flex;
-    justify-content: center;
+.portfolio {
+    &__list {
+        display: flex;
+        justify-content: center;
+
+        &--buttons {
+            gap: 8px;
+            margin-bottom: 50px;
+        }
+    }
 }
+
 
 .portfolio__list--buttons {
     gap: 8px;
